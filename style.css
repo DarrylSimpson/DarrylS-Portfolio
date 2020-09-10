@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: purple;
+}
+
+
+
+/*.hero {
+    background-image: url("./images/DJcolorado.jpg");
+    background-size: cover;
+    background-position: center;
+}*/
