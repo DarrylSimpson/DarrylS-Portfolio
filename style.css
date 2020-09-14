@@ -83,7 +83,7 @@ header nav ul li a:hover {
 
 
 .hero {
-    background-image: url("../portfolio/images/bg_img.jpg");
+    background-image: url("./images/bg_img.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
