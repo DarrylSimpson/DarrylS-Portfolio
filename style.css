@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/*Setting common colors throughout css*/
 :root {
     --light: #cfffe5;
     --teal: #618985;
@@ -13,14 +14,15 @@
     --text: helvetica, arial, sans-serif;
 }
 
+/*jSetrting variables for the base of the page*/
 body {
     background-color: rgba(168, 174, 193, .8);
-    color: var(--purple);
+    color: var(--blue);
     font-family: var(--text);
     opacity: 1;
 }
 
-/*header start*/
+/*header start, polacing image*/
 header {
     padding: 20px 35px;
     background-color: var(--purple);
@@ -137,7 +139,7 @@ header nav ul li a:hover {
 .about-text {
     display: flex;
     text-align: center; 
-    padding-top: 10%;
+    padding-top: 0;
     grid-column: 3 / 4;
 }
 
@@ -165,6 +167,7 @@ header nav ul li a:hover {
     grid-column-gap: 15px;
     padding-top: 20px;
     padding-right: 5%;
+    position: relative;
 }
 
 .work-grid-container img {
@@ -172,6 +175,8 @@ header nav ul li a:hover {
     height: 100%;
     object-fit: cover;
 }
+
+
 
 .work-title {
     text-align:  right;
@@ -188,9 +193,34 @@ header nav ul li a:hover {
     grid-row: 1/3;
 }
 
+.p1-text{
+    position: absolute;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    grid-column: 2/4;
+    grid-row: 1/3;
+    background-color: grey;
+    bottom: 8px;
+    right: 10px;
+}
+
 .p2-img {
     grid-column: 4/6;
     grid-row: 2/4;
+}
+
+
+.p2-text {
+    position: absolute;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    grid-column: 4/6;
+    grid-row: 2/4;
+    background-color: grey;
+    bottom: 8px;
+    left: 10px;
 }
 
 .p3-img {
@@ -198,19 +228,71 @@ header nav ul li a:hover {
     grid-row: 1/2;
 }
 
+.placeholder-text1 {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-color: grey;
+    bottom: 8px;
+    left: 10px;
+}
+
+
 .p4-img {
     grid-column: 2/3;
     grid-row: 3/4;
 }
- .p5-img {
+
+.placeholder-text2 {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: grey;
+    bottom: 8px;
+    left: 10px;
+}
+
+.p5-img {
      grid-column: 3/4;
      grid-row: 3/4;
- }
+}
 
- .p6-img {
+.placeholder-text3 {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: grey;
+    bottom: 8px;
+    left: 10px;
+}
+
+.p6-img {
      grid-column: 4/5;
      grid-row: 1/2;
- }
+}
+
+.placeholder-text4 {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: grey;
+    bottom: 8px;
+    left: 10px;
+}
+
+
 
 /*End Work Section*/
 
@@ -233,27 +315,47 @@ header nav ul li a:hover {
     grid-row: 1/2;
 }
 
-.contact-info {
+
+.number {
     display: flex;
-    justify-content: center;
     text-align: center;
-
+    grid-column: 2/ 3;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.contact-info .number {
-    grid-column: 2/ span 3;
-    grid-row: 1;
-}
-
-.contact-info .email {
-    grid-column: 3/span 4;
-    grid-row: 1;
+.email {
+    display: flex;
+    text-align: center;
+    grid-column: 3/4;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .github {
-    grid-column: 4/ span 5;
-    grid-row: 1;
+    display: flex;
+    text-align: center;
+    grid-column: 4/ 5;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*End of Contact*/
 
+/* MEDIA QUETY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    /*this will be applied on any screen smaller than 980px*/
+}
+
+/*MEDIA QUESTY FOR TABLETS AND SMALLER*/
+@media screen and (max-width: 768px) {
+        /*this will be applied on any screen between 768 and 575px*/
+     
+}
+
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
+@media screen and (max-width: 575px) {
+        /*this will be applied on any screen smaller than 575px*/
+        
+     
+}
