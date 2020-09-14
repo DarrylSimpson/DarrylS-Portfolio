@@ -14,6 +14,15 @@
     --text: helvetica, arial, sans-serif;
 }
 
+/*universal rule for all h2 headers*/
+h2 {
+    text-align: right;
+    font-size: 35px ;
+    border-right: 3px groove;
+    padding-right: 50px;
+    padding-left: 100px;
+}
+
 /*jSetrting variables for the base of the page*/
 body {
     background-color: rgba(168, 174, 193, .8);
@@ -82,7 +91,6 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     align-items: flex-end;
     height: 35vh;
-    /* padding: 15%; */
     background-attachment: fixed;
     background-position: 70%;
 }
@@ -100,7 +108,6 @@ header nav ul li a:hover {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
-    /* text-align: right; */
 }
 
 /*about me section*/
@@ -114,11 +121,6 @@ header nav ul li a:hover {
 }
 
 .about-title {
-    text-align: right;
-    font-size: 35px;
-    border-right: 3px groove;
-    padding-right: 50px;
-    padding-left: 100px;
     grid-column: 1;
     grid-row: 1 /-1;
     width: 288px;
@@ -179,11 +181,6 @@ header nav ul li a:hover {
 
 
 .work-title {
-    text-align:  right;
-    font-size: 35px;
-    border-right: 3px groove;
-    padding-right: 50px;
-    padding-left: 100px;
     grid-column: 1;
     grid-row: 1;
 }
@@ -305,12 +302,7 @@ header nav ul li a:hover {
     margin-top: 30px;
 }
 
-.contact-title {
-    text-align: right;
-    font-size: 35px ;
-    border-right: 3px groove;
-    padding-right: 50px;
-    padding-left: 100px;    
+.contact-title {    
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -345,12 +337,44 @@ header nav ul li a:hover {
 /* MEDIA QUETY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     /*this will be applied on any screen smaller than 980px*/
-}
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    h2{
+        text-align:left;
+    }
+    .about-container {
+        grid-template-columns:auto;
+    }
+
 
 /*MEDIA QUESTY FOR TABLETS AND SMALLER*/
 @media screen and (max-width: 768px) {
         /*this will be applied on any screen between 768 and 575px*/
-     
+
+        section {
+            padding:  30px 15px;
+        }
+
 }
 
 /*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
