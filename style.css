@@ -37,7 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url("./images/bg_img.jpg");
+    background-image: url(./images/bg_img.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -83,7 +83,7 @@ header nav ul li a:hover {
 
 
 .hero {
-    background-image: url("./images/bg_img.JPG");
+    background-image: url(./images/bg_img.JPG);
     background-size: cover;
     background-position: center;
     display: flex;
